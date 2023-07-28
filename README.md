@@ -44,12 +44,6 @@ API Pemindai Dokumen [PixLab](https://pixlab.io/cmd?id=docscan) menawarkan pende
 [API PixLab](https://pixlab.io/cmd?id=docscan) menyediakan penyelesaian yang ringkas namun berkuasa bagi para pembangun untuk mengintegrasikan keupayaan pengimbasan dokumen ke dalam aplikasi atau platform web mereka. Dengan memanfaatkan algoritma penglihatan komputer dan pembelajaran mesin yang canggih, PixLab dapat mengekstrak maklumat relevan dari kad pengenalan dan pasport yang dipindai, menyelaraskan proses KYC untuk pengesahan identiti yang lancar.
 
 
-![Malaysian](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/g45fgu2gxhk96z5vbxgj.jpg)<figcaption>Contoh Kad Pengenalan Input</figcaption>
-
-
-![Implementation](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/jzulvyz7mwxs5c343jpy.png)<figcaption>Medan Kad Pengenalan Diekstrak</figcaption>
-
-
 <p align="center">
     <img src="BblNFPTCEAAvPZL.jpg" alt=" Specimen" /><br>
     <em>Contoh Kad Pengenalan Input</em>	
@@ -154,7 +148,8 @@ require_once "pixlab.php";
 #
 # Untuk maklumat lanjut, layari https://pixlab.io/cmd?id=docscan.
 
-$idcard_link = 'https://buletinonline.net/v7/wp-content/uploads/2016/06/Mykad-penghuni-puan-Noraini-2.jpg'; /* ID card prototype: Of course, replace with a real government issued id. */
+$idcard_link = 'https://buletinonline.net/v7/wp-content/uploads/2016/06/Mykad-penghuni-puan-Noraini-2.jpg';
+/* ID card prototype: Of course, replace with a real government issued id. */
 $key = 'PIXLAB_API_KEY'; # Your PixLab API key that you can fetch from https://pixlab.io/dsahboard
 /* Process */
 $pix = new Pixlab($key);
@@ -185,7 +180,7 @@ if( isset($pix->json->fields->nationality) )   echo  "Nationality: ".$pix->json-
 
 ```
 
-## Kesimpulan: <a name="Kesimpulan"></a>
+## Kesimpulan:<a name="Kesimpulan"></a>
 Pemindaian kad pengenalan Malaysia seperti **MyKAD**, **MyKID**, dan **lesen memandu Malaysia** menggunakan [API PixLab](https://pixlab.io/cmd?id=docscan) menyederhanakan proses pengesahan KYC bagi pengguna Malaysia. API ini menyediakan ekstraksi maklumat yang boleh dipercayai dan tepat, menyusun alur kerja pengesahan identiti untuk aplikasi web dan platform.
 
 Dengan menggabungkan API Pemindai Dokumen PixLab ke dalam proses KYC anda, anda dapat meningkatkan pengalaman pengguna, memastikan pematuhan, dan mengesahkan keaslian **kad pengenalan Malaysia** secara efisien. Ciri-ciri hebat API PixLab, yang digabungkan dengan sampel kod yang disediakan, menjadikan lebih mudah bagi pembangun untuk menyatukan kemampuan pemindaian dokumen ke aplikasi mereka.
