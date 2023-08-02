@@ -62,7 +62,7 @@ Sekarang, mari kita mula dengan contoh kod yang disediakan oleh PixLab di reposi
 ### Kod Python <a name="Python"></a>
 Untuk mengakses sampel kod Python, sila ikuti pautan ini:
 
-```
+```python
 import requests
 import json
 
@@ -125,7 +125,7 @@ else:
 ### kod PHP <a name="PHP"></a>
 Untuk mengakses sampel kod PHP, sila ikuti pautan ini: https://github.com/symisc/pixlab/tree/master/PHP
 
-```
+```php
 <?php
 /*
  * Contoh penggunaan pengimbas kad ID daripada PixLab.
